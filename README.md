@@ -1,1 +1,1 @@
-Next.js URL Shortener App
+URL Shortener App
