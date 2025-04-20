@@ -3,7 +3,6 @@ import { redirect } from "next/navigation";
 
 export default async function LinkPage({ params }: { params: Promise<{alias: string}> }) {
     const { alias } = await params;
-    console.log(alias);
 
     try {
         const link: string | null = await getLinkByAlias(alias);
