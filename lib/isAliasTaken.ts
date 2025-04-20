@@ -13,6 +13,7 @@ export default async function isAliasTaken(alias: string): Promise<boolean> {
     }
 
     data.map((l) => {
+        console.log(l.alias);
         if (alias === l.alias) {
             return true;
         }

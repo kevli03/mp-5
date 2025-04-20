@@ -13,7 +13,7 @@ export default function LinkDisplay() {
 
     function handleAlias(l: LinkProps | null) {
         if (l === null) {
-            return <p>Encountered unspecified error</p>
+            return <p></p>
         }
         try {
             if (l.alias === "") {
@@ -23,7 +23,7 @@ export default function LinkDisplay() {
             } else if (l.id === "unavailable") {
                 return <p>Alias is already taken</p>
             } else {
-                return <Link href={l.link}><p>l.link</p></Link>
+                return <p>Shortened link: <Link href={l.link}>l.link</Link></p>
             }
         } catch {
             return <p>Encountered database issue</p>

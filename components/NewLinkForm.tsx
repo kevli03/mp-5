@@ -30,7 +30,7 @@ export default function NewPostForm({ append }: { append: (newLink: LinkProps) =
                 variant="filled"
                 sx={{ backgroundColor: "white", width: "100%" }}
                 label="Alias"
-                placeholder="your-alis"
+                placeholder="your-alias"
                 value={alias}
                 onChange={(e) => setAlias(e.target.value)}
             />
