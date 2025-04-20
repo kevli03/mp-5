@@ -23,7 +23,7 @@ export default function LinkDisplay() {
             } else if (l.id === "unavailable") {
                 return <p>Alias is already taken</p>
             } else {
-                return <p>Shortened link: <Link href={l.link}>{l.link}</Link></p>
+                return <p>Shortened link: <Link href={l.link}>{`https://mp-5-pearl-five.vercel.app/${l.alias}`}</Link></p>
             }
         } catch {
             return <p>Encountered database issue</p>
