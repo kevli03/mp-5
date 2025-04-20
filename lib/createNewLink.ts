@@ -5,7 +5,7 @@ import { LinkProps } from "@/types";
 
 export default async function createNewLink(alias: string, link: string,): Promise<LinkProps> {
     if (alias === "" || link === "") {
-        return {id: "", alias: alias, link: link};
+        return {id: "", alias: alias, link: ""};
     }
     const unavailable = await isAliasTaken(alias)
     if (unavailable) {
